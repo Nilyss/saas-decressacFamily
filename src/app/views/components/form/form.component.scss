@@ -17,9 +17,11 @@
 
 .form__formWrapper__elementsWrapper {
   display: flex;
-  flex-flow: row;
+  flex-flow: row wrap;
   gap: 2em;
 }
+
+// *********** BANKS ***********
 
 .form__formWrapper__elementsWrapper__element {
   display: flex;
@@ -30,6 +32,27 @@
 }
 
 .form__formWrapper__elementsWrapper__element__name {
+  font-size: 1.5em;
+  text-transform: capitalize;
+}
+
+.form__formWrapper__elementsWrapper__element__balance {
+  display: flex;
+  justify-content: space-between;
+}
+
+// *********** CREDITORS ***********
+
+.form__formWrapper__elementsWrapper__element--creditors {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  gap: 1em;
+  list-style: none;
+  color: Variables.$primaryFontColor;
+}
+
+.form__formWrapper__elementsWrapper__element__name--creditors {
   font-size: 1.5em;
   text-transform: capitalize;
 }

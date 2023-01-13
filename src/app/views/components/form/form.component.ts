@@ -16,7 +16,10 @@ import { CreditorService } from '../../../data/service/creditor.service'
   template: `
     <section class="form">
       <form #bankAccount="ngForm" class="form__formWrapper">
-        <ul *ngIf="banks" class="form__formWrapper__elementsWrapper">
+        <ul
+          *ngIf="banks || creditors"
+          class="form__formWrapper__elementsWrapper"
+        >
           <li
             *ngFor="let bank of banks"
             class="form__formWrapper__elementsWrapper__element"
@@ -26,6 +29,21 @@ import { CreditorService } from '../../../data/service/creditor.service'
             </h3>
             <p class="form__formWrapper__elementsWrapper__element__balance">
               <span>Currency : </span> {{ bank?.balance }} €
+            </p>
+          </li>
+          <li
+            *ngFor="let creditor of creditors"
+            class="form__formWrapper__elementsWrapper__element--creditors"
+          >
+            <h3
+              class="form__formWrapper__elementsWrapper__element__name--creditors"
+            >
+              {{ creditor?.name }}
+            </h3>
+            <p
+              class="form__formWrapper__elementsWrapper__element__balance--creditors"
+            >
+              <span>Currency : </span> {{ creditor?.monthlyPrice }} €
             </p>
           </li>
         </ul>
