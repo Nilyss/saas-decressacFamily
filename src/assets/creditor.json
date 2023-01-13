@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "macif",
+    "monthlyPrice": 0.0
+  },
+  {
+    "id": 2,
+    "name": "Engie-Electricite",
+    "monthlyPrice": 0.0
+  },
+  {
+    "id": 3,
+    "name": "Engie-Gaz",
+    "monthlyPrice": 0.0
+  },
+  {
+    "id": 4,
+    "name": "saur",
+    "monthlyPrice": 0.0
+  },
+  {
+    "id": 5,
+    "name": "ophlm",
+    "monthlyPrice": 0.0
+  },
+  {
+    "id": 6,
+    "name": "orange",
+    "monthlyPrice": 0.0
+  }
+]

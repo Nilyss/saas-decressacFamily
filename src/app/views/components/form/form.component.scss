@@ -1,0 +1,40 @@
+// ********** SCSS UTILS ***********
+
+@use '../../../utils/styles/variables' as Variables;
+@use '../../../utils/styles/mixins' as Mixins;
+@use '../../../utils/styles/keyframes' as Keyframes;
+
+.form {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4em 15em;
+}
+
+.form__formWrapper {
+}
+
+.form__formWrapper__elementsWrapper {
+  display: flex;
+  flex-flow: row;
+  gap: 2em;
+}
+
+.form__formWrapper__elementsWrapper__element {
+  display: flex;
+  flex-flow: column;
+  gap: 1em;
+  list-style: none;
+  color: Variables.$primaryFontColor;
+}
+
+.form__formWrapper__elementsWrapper__element__name {
+  font-size: 1.5em;
+  text-transform: capitalize;
+}
+
+.form__formWrapper__elementsWrapper__element__balance {
+  display: flex;
+  justify-content: space-between;
+}
